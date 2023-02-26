@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Personal Curriculum Vitae </title>
+        <!-- ESTILOS -->
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- ICONOS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- FUENTES -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">    
+        <!-- OG -->
+        <meta property="og:title" content="Desarrollador y Diseñador Web Junior Argentina"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="assets/img/foto.jpg"/>
+        <meta property="og:url" content="https://personalCV.dev/"/>
+        <meta property="og:description" content="Web Personal como Curriculum Vitae, desarrollador web Front-End junior, especializado en tecnologias como HTML5, CSS3, JavaScript, React y Angular."/>
+    </head>
+
+    <body>
+        
+        <!-- Barra Navegacion y Botones -->
+        <header id="header" class="header">
+            <nav class="nav">
+                <ul class="nav-bar">
+                    <li class="nav-item"><a href="#" class="nav-link ">INICIO</a></li>
+                    <li class="nav-item"><a href="#seccion-2" id="tema-link" class="nav-link">SOBRE MI</a></li>
+                    <li class="nav-item"><a href="#seccion-3" id="tema-link" class="nav-link">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <main>  
+            <!-- Saludo y Presentacion SECCION 1 -->
+            <section id="seccion-1" class="seccion-1">
+                <h1 class="titulo-principal">Hola! me llamo Micheal Fields</h1>
+                <h2 class="subtitulo-principal">Y soy un programador Front-End</h2>
+            </section>
+
+            <!-- Foto de Perfil e Informacio  Personal -->
+            <section id="seccion-2" class="seccion-2">
+                    <div class="foto-pefil"><img src="assets/img/foto.jpg" alt="foto de perfil"></div>
+                    <div class="informacion-1">
+                        <div class="info-1-seccion1">
+                            <h3>Acerca de Mi</h3>
+                            <p>Soy un Ingeniero en Sistemas con especializacion en el desarrollo de la interfaz y experiencia de usuario y planificacion de proyectos. Adicionalmente con conocimientos basicos de Bases de Datos y de UX-UI. <a href="#">Link del Diploma</a>.</p>
+                        </div>
+                        <div class="info-1-seccion2">
+                            <h3>Educacion</h3>
+                            <h4>Universidad de Rosario</h4>
+                            <ul class="lista-info-1">
+                                <li>Ing en Sistemas Informaticos, 2018</li>
+                                <li>Graduado con Honores</li>
+                                <li>Vicepresidente del club de Matematica, 2016</li>
+                            </ul>
+                        </div>
+                        <div class="info-1-seccion3">
+                            <h3>Tecnologias</h3>
+                            <h4>Manejo de tecnologias:</h4>
+                            <ul class="lista-info-2">
+                                <li>HTML5 <a href="#">Link a proyectos</a>.</li>
+                                <li>CSS3 <a href="#">Link a proyectos</a>.</li>
+                                <li>SASS</li>
+                                <li>Bootstrap <a href="#">Link a proyectos</a>.</li>
+                                <li>JavaScript <a href="#">Link a proyectos</a>.</li>
+                                <li>ReactJS <a href="#">Link a proyectos</a>.</li>
+                                <li>GIT <a href="#">Link a Repositorio</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Seccion de Formulario de contacto -->
+            <section id="seccion-3" class="seccion-contacto">
+                <h2>Contactame via email!</h2>
+                <div>
+                    <form action="#" method="#">
+                        <h3>Formulario de Contacto</h3>
+                        <ul class="form-lista">
+                            <li>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-input-1" name="user_name" id="nombre" placeholder="introducir su nombre" required>
+                            </li>
+                            
+                            <li>
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-input-2" name="user_surname" id="apellido" placeholder="introducir su apellido" required>
+                            </li>
+                            
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email" class="form-input-3" name="usar_email" id="email" placeholder="introducir su email" required>
+                            </li>
+                            
+                            <li>
+                                <h4>Escribeme!</h4>
+                                <textarea name="mensaje" id="msg" cols="30" rows="10" placeholder="    ...Escriba su mensaje..." required></textarea>
+                            </li>
+                        </ul>
+                        
+                        <button type="submit" id="boton-form" class="boton-form">ENVIAR</button>
+                    </form>
+                </div>
+                <div id="alert" class="alerta-mail">
+                    <p>El email fue enviado con exito!</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="footer" class="footer">
+            <h3> Puedes encontrarme en mis redes</h3>
+            <ul class="footer-redes">
+                <li><a href="#"><i class='bx bxl-linkedin-square red'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram-alt red'></i></a></li>
+                <li><a href="#"><i class='bx bxl-github red'></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook-square red'></i></a></li>
+            </ul>
+            <p><strong>© Copyright - Michael Fields - Todos los derechos reservados.</strong></p>
+        </footer>
+
+        <!-- JavaScript-->
+        <script src="scripts/scripts.js"></script>
+    </body>
+
+</html>

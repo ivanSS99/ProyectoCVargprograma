@@ -1,0 +1,255 @@
+/* Normalizado de los estilos */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Normalizado de fuentes */
+h1, h2, h3, h4, a, li, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* PLANTILLA COLORES */
+:root{
+    /* modo claro*/
+    --color1: #131212;
+    --color2: #000000;
+    --fondo1: #dfdcdc;
+    --fondo2: #ffffff;
+}
+
+
+
+/* HEADER (NAVEGACION Y BOTONES CAMBIO DE TEMA) */
+.header{
+    background-color: var(--fondo2);
+    display: flex;
+    flex-direction: row;
+}
+
+.nav{
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+.nav-bar li{
+    text-decoration: none;
+    list-style: none;
+}
+.nav-link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: var(--fondo1);
+    font-weight: bold;
+}
+.nav-link:hover{
+    border: solid 1px #000000;
+}
+
+/* BODY SECCION 1 */
+.seccion-1{
+    background-color: var(--fondo1);
+    padding: 100px;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: var(--color1);
+}
+.subtitulo-principal{
+    text-align: center;
+    font-size: 40px;
+    color: var(--color1);
+}
+
+
+
+/* BODY SECCION 2*/
+.seccion-2{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+
+}
+
+.foto-pefil{
+    width: 30%;
+    text-align: center;
+}
+.foto-pefil img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.informacion-1{
+    width: 70%;
+}
+.info-1-seccion1{
+    margin-bottom: 30px;
+}
+.info-1-seccion1 h3{
+    margin-left: 15px;
+    font-size: 35px;
+    color: var(--color1);
+}
+.info-1-seccion1 p{
+    font-weight: 600;
+    font-size: 20px;
+    width: 80%;
+}
+
+
+.info-1-seccion2 h3{
+    margin-left: 15px;
+    font-size: 35px;
+    color: var(--color1);
+}
+.info-1-seccion2 h4{
+    font-size: 20px;
+}
+.lista-info-1{
+    font-size: 18px;
+}
+.lista-info-1 li{
+    list-style: none;
+    font-weight: 600;
+}
+
+.info-1-seccion3{
+    margin-top: 30px;
+}
+.info-1-seccion3 h3{
+    font-size: 35px;
+    margin-left: 15px;
+}
+.info-1-seccion3 h4{
+    font-size: 20px;
+}
+
+.lista-info-2 li{
+    list-style: none;
+    font-weight: 600;
+}
+
+/* SECCION 3 FORMULARIO DE CONTACTO */
+
+.seccion-contacto{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.seccion-contacto h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+form{
+    display: inline-block;
+    padding: 50px 40px;
+    background-color: var(--fondo1);
+    margin-top: 40px;
+    margin-left: 36%;
+    border: solid 1px #000000;
+    border-radius: 15px;
+}
+form h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.form-lista li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.form-lista li > label{
+    margin-left: 30px;
+}
+
+.form-input-1{
+    margin-left: 10px;
+}
+.form-input-2{
+    margin-left: 8px;
+}
+.form-input-3{
+    margin-left: 25px;
+}
+
+.form-lista li > h4{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+textarea{
+    width: 250px;
+    height: 250px;
+    resize: none;
+    margin-left: 16%;
+    margin-bottom: 20px;
+}
+
+.boton-form{
+    font-weight: bolder;
+    margin-left: 20%;
+    padding: 10px 80px;
+    border: 1px solid lightsteelblue;
+    border-radius: 5px;
+    background-color: var(--fondo2);
+}
+.boton-form:hover{
+    background-color: lightskyblue;
+}
+
+.alerta-mail{
+    margin-top: 40px;
+}
+.alerta-mail p{
+    text-align: center;
+    background-color: lightgreen;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* FOOTER */
+.footer{
+    background-color: var(--fondo1);
+    padding-top: 30px;
+}
+
+.footer h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.footer-redes li{
+    list-style: none;
+}
+
+.red{
+    color: #000000;
+    font-size: 30px;
+}
+
+.footer p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
